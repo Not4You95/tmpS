@@ -1,0 +1,4 @@
+#!/bin/bash
+file $1
+pdflatex  $1.tex
+openPdf $1.pdf

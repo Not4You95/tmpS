@@ -1,0 +1,5 @@
+#!/bin/bash
+temp = $1
+g++ "$temp".cpp -o "$temp"
+
+./"$temp"

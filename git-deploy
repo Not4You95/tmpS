@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#read -r -p 'commit massages:' desc
+git pull
+git fetch
+git add .
+git add -u
+git commit -m "$1"
+git push 

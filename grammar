@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#read -r -p 'Enter file name: ' name
+
+rm output.txt
+detex *.tex > tmp.txt
+echo "Grammar and feedback for document $name" >> output.txt
+echo -e "\n" >> output.txt
+style tmp.txt  >> output.txt
+echo -e "\n" >> output.txt
+echo "---------------------------------- " >> output.txt
+echo -e "\n" >> output.txt
+diction -s tmp.txt >> output.txt
+rm tmp.txt
+
